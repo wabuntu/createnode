@@ -1,7 +1,7 @@
 #cloud-config
 password: password
-chpasswd:
-  expire: False
+chpasswd: { expire: False }
+ssh_pwauth: True
 
 packages:
   - "openssh-server"
