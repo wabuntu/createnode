@@ -1,4 +1,8 @@
 #cloud-config
+hostname: node01.localdomain
+user: ubuntu
+
+
 password: password
 chpasswd: { expire: False }
 ssh_pwauth: True
