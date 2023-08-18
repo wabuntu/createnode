@@ -9,7 +9,9 @@ NODE=${2}
 
 date;
 
+qemu-img resize focal-server-cloudimg-amd64.img 32G
 cp focal-server-cloudimg-amd64.img /var/lib/libvirt/images/${NAME}${NODE}-vda.qcow2
+
 
 virt-install --name ${NAME}${NODE} --vcpus 5 --ram 16384 \
 --osinfo=ubuntu-lts-latest \
