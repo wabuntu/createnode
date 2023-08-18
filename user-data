@@ -1,12 +1,11 @@
 #cloud-config
-hostname: node01.localdomain
+hostname: node03
 user: ubuntu
-
-
-password: password
+password: pass
 chpasswd: { expire: False }
 ssh_pwauth: True
+ssh_authorized_keys:
+  - ssh-rsa AAAA ubuntu@AAAA
 
 packages:
   - "openssh-server"
-
